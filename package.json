@@ -3,9 +3,7 @@
     "version": "0.1.0",
     "main": "lib/ajency.js",
     "description": "Node module for ajency tasks",
-
     "homepage": "http://ajency.in/node",
-
     "bugs": "https://github.com/surajajency/ajency/issues",
     "author": {
         "name": "Suraj Air <suraj@ajency.in>",
@@ -23,7 +21,7 @@
     "keywords": [
         "ajency",
         "Node module",
-        " Ajency"
+        "Ajency"
     ],
     "devDependencies": {
         "grunt-contrib-jshint": "^0.10.0",
@@ -38,5 +36,9 @@
     "scripts": {
         "test": "grunt",
         "browser": "browserify lib/ajency.js > browser.js"
+    },
+    "preferGlobal": "true",
+    "bin": {
+        "ajency": "lib/ajency.js"
     }
 }
